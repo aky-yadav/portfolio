@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+
+  <!--  <link href = "https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel = "stylesheet" > -->
+  <link rel = "stylesheet" href = "./css/styles.css"/>
+  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function() {
+  AOS.init();
+});
+
+$(window).on('load', function() {
+  AOS.refresh();
+});
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html,body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+</script>
+<script type="text/javascript">
+    var i = 0;
+    function makeProgress(){
+        if(i < 100){
+            i = i + 1;
+            $(".progress-bar").css("width", i + "%");
+        }
+        // Wait for sometime before running this script again
+        setTimeout("makeProgress()", 35);
+    }
+    makeProgress();
+</script>
+<script>
+$(function() {
+
+  var $meters = $(".progress > span");
+  var $section = $('#bar');
+  var $queue = $({});
+
+  function loadDaBars() {
+    $meters.each(function() {
+      var $el = $(this);
+      var origWidth = $el.width();
+      $el.width(0);
+      $queue.queue(function(next) {
+        $el.animate({
+          width: origWidth
+        }, 1200, next);
+      });
+    });
+  }
+
+  $(document).bind('scroll', function(ev) {
+    var scrollOffset = $(document).scrollTop();
+    var containerOffset = $section.offset().top - window.innerHeight;
+    if (scrollOffset > containerOffset) {
+      loadDaBars();
+      // unbind event not to load scrolsl again
+      $(document).unbind('scroll');
+    }
+  });
+
+});
+
+</script>
+  <body class = "main">
+    <section class = "title">
+         <nav class="navbar navbar-expand-lg navbar-dark">
+           <div class = "container-fluid">
+             <div class = "head">
+               <p class="navbar-brand-tin">Portfolio</p>
+             </div>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#list" >
+          <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="list">
+           <ul class = "navbar-nav ml-auto">
+             <li class = "nav-item">
+               <a  href = "#home">Home</a>
+            </li><hr/>
+             <li class = "nav-item">
+               <a  href = "#about">About</a>
+            </li><hr/>
+            <li class = "nav-item">
+              <a  href = "#work">Work</a>
+            </li><hr/>
+               <li class = "nav-item">
+               <a  href = "#contact">Contact</a>
+             </li><hr/>
+           </ul>
+
+         </div>
+         </div>
+         </nav>
+           <hr style = "margin:0px;height :3px; width:100%;background-color:green;" >
+
+        </section>
+
+    <section id = "home">
+      <h1 class = "intro" class="w3-container w3-center w3-animate-bottom" data-aos="fade-right" data-aos-duration="1000">Hey I am Amit Kumar</h1>
+      <h3 class = "myself" data-aos="fade-left" data-aos-duration="1000"><em>a web developer</em></h3>
+      <a href = "#about" style = "margin-top:20px;" class = "btn btn-primary btn-danger btn-lg" data-aos="fade-right" data-aos-duration="1000">Know Me</a>
+      </section>
+       <hr style = "margin:0px;height :3px; width:100%;background-color:green;" >
+
+    <section id = "about">
+      <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+      <h1 class = "about_heading" data-aos="zoom-in" data-aos-duration="1000"><u>About</u></h1>
+    <div class="row">
+      <div class = "image_about_div col-lg-5" data-aos="fade-right" data-aos-duration="1000">
+        <img class = "image_about_1" src = ".\css\images\amit_portfolio.jpg" alt = "Image of Developer" />
+      </div>
+      <div class = " content_about col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+       <span class = "subcontent_about"><ul>
+         <li>An enthusiastic fresher with highly motivated and leadership skills.</li>
+         <li>Eager to learn new technologies and methodologies.</li>
+         <li>Always willing to innovate the new things which can improve the existing technology.</li>
+       </ul>
+    </span>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+  <h1 class = "about_heading"><u>Education</u></h1>
+<div class="row">
+  <div class = "image_about_div col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+    <img class = "image_about_2" src = ".\css\images\college_portfolio.jpg" alt = "Image of College" />
+  </div>
+  <div class = " content_about col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+    <!--<h3 class = "subheading_about">I'm a software developer</h3> -->
+     <h1 class = "subheading_about">Delhi technological University</h1>
+     <span class = "subcontent_about">Programme:- B.Tech</span> <br />
+     <span class = "subcontent_about">Course:- Information technology</span><br />
+     <span class = "subcontent_about">Batch:- 2017-2021</span><br />
+     <span class = "subcontent_about">C.G.P.A :- 6.627</span><br  />
+  </div>
+</div>
+</div>
+<a class= "about_button carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+    </section>
+     <hr style = "margin:0px;height:3px; width:100%;background-color:green;" >
+    <section id = "skills">
+      <h1 class = "skills_heading">Skills</h1>
+      <div class = "row skills_content">
+          <div class = "col-lg-3 col-md-6" data-aos="flip-left" data-aos-duration="1000">
+            <div>
+              <div class = "diamond"><i class="skills_icon fa fa-fast-forward fa-3x" aria-hidden="true"></i></div>
+              <div>
+                <h4 class = "skills_subheading">Fast</h4>
+                <p class = "skills_subcontent_1">Fast load times and lag free interaction, my highest priority.</p>
+              </div>
+              </div>
+            </div>
+          <div class = "col-lg-3 col-md-6" data-aos="flip-left" data-aos-duration="1000">
+            <div>
+              <div class = "diamond"><i class="skills_icon fa fa-laptop fa-4x" aria-hidden="true"></i></div>
+              <div>
+                <h4 class = "skills_subheading">Responsive</h4>
+                <p class = "skills_subcontent_1">My layouts will work on any device, big or small.</p>
+              </div>
+                </div>
+            </div>
+          <div class = "col-lg-3 col-md-6" data-aos="flip-left" data-aos-duration="1000">
+            <div>
+              <div class = "diamond"><i class="skills_icon fa fa-lightbulb-o fa-4x" aria-hidden="true"></i></div>
+              <div>
+                <h4 class = "skills_subheading">Intuitive</h4>
+                <p class = "skills_subcontent_1">Strong preference for easy to use, intuitive UX/UI.</p>
+              </div>
+             </div>
+            </div>
+          <div class = "col-lg-3 col-md-6" data-aos="flip-left" data-aos-duration="1000">
+          <div>
+            <div class = "diamond"><i class="skills_icon fa fa-rocket fa-4x" aria-hidden="true"></i></div>
+            <div>
+              <h4 class = "skills_subheading">Dynamic</h4>
+              <p class = "skills_subcontent_1">Websites don't have to be static, I love making pages come to life.</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class = "row">
+          <div class = "image_skills_div col-lg-5 col-md-5" data-aos="fade-right" data-aos-duration="1000">
+          <img class = "image_skills" src = ".\css\images\skills_image.png" alt = "Image of College" />
+          </div>
+          <div class = "col-lg-7 col-md-7">
+            <div id = "bar" class = "skills_content">
+               <div class="bs-example" data-aos="fade-left" data-aos-duration="1000">
+        <span class = "skills_subcontent_2">HTML5</span>
+        <div class="progress" style = "height:30px;">
+        <span class="progress-bar bg-info progress-bar-striped" style="max-width:90%;height:30px;font-size:18px;"><strong>90%</strong></span>
+        </div>
+        <br/>
+        <span class = "skills_subcontent_2">CSS3</span>
+        <div class="progress" style = "height:30px;">
+            <span class="progress-bar bg-info progress-bar-striped" style="max-width:90%;height:30px;font-size:18px;"><strong>90%</strong></span>
+         </div>
+         <br/>
+         <span class = "skills_subcontent_2">JS</span>
+         <div class="progress" style = "height:30px;">
+             <span class="progress-bar bg-info progress-bar-striped" style="max-width:80%;height:30px;font-size:18px;"><strong>80%</strong></span>
+          </div>
+          <br/>
+          <span class = "skills_subcontent_2">React Js</span>
+          <div class="progress" style = "height:30px;">
+              <span class="progress-bar bg-info progress-bar-striped" style="max-width:80%;height:30px;font-size:18px;"><strong>80%</strong></span>
+           </div>
+           <br/>
+           <span class = "skills_subcontent_2">Node Js</span>
+           <div class="progress" style = "height:30px;">
+               <span class="progress-bar bg-info progress-bar-striped" style="max-width:78%;height:30px;font-size:18px;"><strong>78%</strong></span>
+            </div>
+            <br/>
+            <span class = "skills_subcontent_2">Mongodb</span>
+            <div class="progress" style = "height:30px;">
+                <span class="progress-bar bg-info progress-bar-striped" style="max-width:90%;height:30px;font-size:18px;"><strong>90%</strong></span>
+             </div>
+         </div>
+         </div>
+          </div>
+        </div>
+    </section>
+  <!-- <hr style = "margin:0px;height :3px; width:100%;background-color:green;" > -->
+      <section id = "work">
+        <h1 class = "intro1" data-aos="fade-right" data-aos-duration="1000" ><u>Some of My Projects</u></h1>
+        <div class = "row">
+          <div class = "icon col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000">
+            <div class = "image-div">
+              <img class = "image" src = ".\css\images\tech_portfolio.jpg" />
+            </div>
+            <div class = "url">
+              <a class = "link" href = "https://my-techstore.netlify.app/" target = "blank"><center>Tech Store</center></a>
+            </div>
+          </div>
+
+            <div class = "icon col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000">
+              <div class = "image-div">
+                <img class = "image" src = ".\css\images\cocktail_portfolio.jpg" />
+              </div>
+              <div class = "url">
+                <a class = "link" href = "https://cocktail-master.netlify.app/" target = "blank"><center>Cocktail</center></a>
+              </div>
+            </div>
+         <div class = "icon col-lg-4 col-md-6" data-aos="flip-right" data-aos-duration="1000">
+           <div class = "image-div">
+             <img class = "image" src = ".\css\images\blog_portfolio.png"/>
+           </div>
+           <div class = "url">
+             <a class = "link" href = "https://pure-tor-43587.herokuapp.com/" target = "blank"><center>Blog Website</center></a>
+           </div>
+         </div>
+
+           <div class = "icon col-lg-4 col-md-6" data-aos="flip-right" data-aos-duration="1000">
+             <div class = "image-div">
+               <img class = "image" src = ".\css\images\simon_game.jpg" />
+             </div>
+             <div class = "url">
+               <a class = "link" href = "https://simon-game-master.netlify.app/" target = "blank"><center>Simon Game</center></a>
+             </div>
+           </div>
+
+             <div class = "icon col-lg-4 col-md-6" data-aos="flip-right" data-aos-duration="1000">
+               <div class = "image-div">
+                 <img class = "image" src = ".\css\images\tindog_portfolio.jpg" />
+               </div>
+               <div class = "url">
+                 <a class = "link" href = "https://tindog-master.netlify.app/" target = "blank"><center>Tindog</center></a>
+               </div>
+             </div>
+               <div class = "icon col-lg-4 col-md-6" data-aos="flip-left" data-aos-duration="1000">
+                 <div class = "image-div">
+                   <img class = "image" src = ".\css\images\drum_portfolio.jpg" />
+                 </div>
+                 <div class = "url">
+                   <a class = "link" href = "https://drum-kit-master.netlify.app/" target = "blank"><center>Drum Kit</center></a>
+                 </div>
+               </div>
+       </div>
+        </section>
+        <section id = "achieve">
+            <h1 class = "achieve_heading" data-aos="zoom-in" data-aos-duration="1000">Acheivements</h1>
+          <div class="row">
+            <div class = "image_achieve_div col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+              <img class = "image_achieve" src = ".\css\images\avensis_2020_new.jpg" alt = "Logo of Avensis" />
+            </div>
+            <div class = " content_achieve col-lg-6" >
+              <div data-aos="fade-left" data-aos-duration="1000">
+                <h3 class = "subheading_achieve">champions of Aahvaan-19</h3>
+                <p class = "subcontent_achieve">Won Gold medal in Handball (intercollege tournament) 2019.</p>
+              </div>
+              <div data-aos="fade-left" data-aos-duration="1500">
+                <h3 class = "subheading_achieve">National player</h3>
+                <p class = "subcontent_achieve">Not secured any position in kho-kho (2014)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+   <hr style = "margin:0px;height :3px; width:100%;background-color:green;" >
+        <section id = "contact">
+          <div >
+            <h1 class = "intro2" data-aos="fade-down" data-aos-duration="1000">Let's work together...</h1>
+            <p class ="myself2" data-aos="fade-down" data-aos-duration="1000">How do you take your coffee?</p>
+            <div style = "text-align : center; border-radius : 30%; ">
+              <form action=" " method=" " style = "display: inline-block;margin-left: auto;margin-right: auto;text-align: left; margin-bottom : 50px;">
+                <div class="form-group">
+                  <div data-aos="fade-right" data-aos-duration="1000">
+                    <label class = "contact">Name</label>
+                    <input class="form-control" type="text" name="postTitle">
+                  </div>
+                  <div data-aos="fade-left" data-aos-duration="1000">
+                    <label class = "contact">Email</label>
+                    <input class="form-control" type="text" name="postTitle">
+                  </div>
+                  <div data-aos="fade-right" data-aos-duration="1000">
+                    <label class = "contact">Comments</label>
+                    <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-primary" data-aos="fade-right" data-aos-duration="1000" type="submit" name="button">Submit</button>
+              </form>
+              </div>
+            <div class = "row">
+                <div class = "col-lg-3 col-md-3" data-aos="fade-down" data-aos-duration="1000">
+
+                <a class = navbar-link1 href = "https://www.facebook.com/" target = "blank"><i class="icon fa fa-facebook-square"></i> Facebook</a>
+                </div>
+              <div class = "col-lg-3 col-md-3" data-aos="fade-down" data-aos-duration="1000">
+
+                <a class = navbar-link1 href = "https://github.com/aky-yadav/" target = "blank"><i class="icon fa fa-github-square"></i> Github</a>
+                </div>
+            <!--  <div class = "col-lg-3">
+
+                <a class = navbar-link1 href = ""><i class="icon fa fa-twitter-square"></i> Twitter</a>
+              </div> -->
+
+                <div class = "col-lg-3 col-md-3" data-aos="fade-down" data-aos-duration="1000">
+
+                <a class = navbar-link1 href = "https://www.instagram.com/" target = "blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                </div>
+                <div class = "col-lg-3 col-md-3" data-aos="fade-down" data-aos-duration="1000">
+                <a class = navbar-link1 href = "https://www.linkedin.com/in" target = "blank"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a>
+                </div>
+
+
+              </div>
+
+            </div>
+          </section>
+          <hr style = "margin:0px;height :3px; width:100%;background-color:green;" >
+          <section class = "footer">
+            <h4 class = "intro3">Made with <i class="fa fa-heart" aria-hidden="true"></i> by its__aky</h4>
+            <p>© Copyright 2019</p>
+          </section>
+
+  </body>
+</html>

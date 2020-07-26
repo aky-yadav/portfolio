@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.main{
+background-color:#f5f5f0;
+}
+.navbar{
+  background-color:#00001a;
+  padding-right:0px;
+  padding-left:10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display:block;
+  z-index: 1;
+  }
+
+  .navbar-brand-tin{
+    font-size:2rem;
+    font-weight:bold;
+    font-family:"Ubuntu";
+    padding-bottom:20px;
+    color:white;
+  }
+.nav-item
+{
+  padding-bottom:10px;
+  margin:10px;
+  color:WhiteSmoke;
+  font-weight:bold;
+  font-size:25px;
+  font-family:Gill Sans;
+  transition: left ease 1s;
+}
+.nav-item :hover{
+  color:#cc0000;
+  text-decoration: none;
+
+}
+
+#home{
+  background-color: #00001a;
+  color:WhiteSmoke;
+  padding:200px;
+  font-weight:bold;
+  text-align:center;
+  font-family:Gill Sans;
+}
+
+.myself{
+  color:lightgreen;
+  font-family:Gill Sans;
+  font-size : 30px;
+}
+.intro{
+  font-size:50px;
+  color:whitesmoke;
+  font-family:Gill Sans;
+  animation-delay: 7s;
+
+}
+
+#about{
+  padding-top:30px;
+  padding-bottom:160px;
+  font-family:Gill Sans;
+  background-color:white #ffffe6;
+}
+.about_heading
+{
+  text-align : center;
+  font-size: 60px;
+  font-weight:bold;
+  margin-bottom:30px;
+  padding-top:0px;
+}
+.image_about_div
+{
+  padding-top:60px;
+  padding-right:70px;
+  text-align:center;
+}
+.image_about_1{
+  border-radius:0%;
+  width:65%;
+  margin-left:100px;
+  box-shadow: 0px 0px 12px #8c8c8c;
+
+}
+.image_about_2{
+  border-radius:0%;
+  width:65%;
+  margin-left:100px;
+  box-shadow: 0px 0px 12px #8c8c8c;
+
+}
+.content_about
+{
+  padding:50px ;
+
+}
+.subheading_about
+{
+  font-size:35px;
+  padding-bottom:5px;
+  padding-right:0px;
+  font-weight:bold;
+  font-family:serif;
+  margin-right:60px;
+}
+.subcontent_about
+{
+  padding-bottom:30px;
+  padding-right:0px;
+  font-size: 25px;
+  font-family:Times New Roman;
+  margin-right:0px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+    margin-top:225px;
+
+}
+
+#skills{
+  padding:80px;
+  font-family:Gill Sans;
+  background-color:white;
+}
+.skills_heading
+{
+  text-align : center;
+  font-size: 60px;
+  font-weight:bold;
+  margin-bottom:40px;
+  text-decoration:underline;
+  padding-top:0px;
+}
+    .diamond {
+      height: 135px;
+      width: 135px;
+      transform: rotateX(45deg) rotateZ(45deg);
+      box-shadow: 0px 0px 12px black;
+      background-color: #00cccc;
+      padding:0px;
+      margin:10px;
+      color:white;
+}
+.skills_icon
+{
+   transform: rotateX(0deg) rotateZ(-45deg);
+   margin-left:40px;
+   margin-right:100px;
+   margin-top:40px;
+   margin-bottom:90px;
+}
+.skills_subheading
+{
+  padding-top:10px;
+  padding-left:48px;
+  font-weight:bold;
+  font-family:sans;
+  color:#4d4d4d;
+  text-align:justify;
+}
+.skills_content
+{
+   padding-top:30px;
+   padding-left:70px;
+   padding-bottom:55px;
+   margin:20px 20px 10px 40px;
+
+}
+.skills_subcontent_1
+{
+  font-size:15px;
+  font-family:times;
+  text-align:center;
+  padding-right:22px;
+  font-weight:bold;
+  font-family:sans;
+  color:#4d4d4d;
+
+}
+.skills_subcontent_2
+{
+  font-size:20px;
+  font-family:times;
+}
+.image_skills_div
+{
+  padding-top:100px;
+  padding-right:100px;
+  text-align:center;
+}
+.image_skills{
+  border-radius:0%;
+  width:90%;
+  box-shadow: 0px 0px 12px #808080;
+}
+#work{
+  background-color:#e6e6e6;
+  padding:120px;
+  font-family:Gill Sans;
+  box-shadow: 0px 0px 12px #808080;
+}
+.intro1{
+  padding-top:-20px;
+  font-size:50px;
+  color:black;
+  text-align:center;
+  font-family:Gill Sans;
+  padding-bottom:60px;
+}
+.icon
+{
+  color:whitesmoke;
+  font-family:Gill Sans;
+}
+.image{
+  width:100%;
+  height:100%;
+
+}
+
+.image-div{
+  width:100%;
+  height: 70%;
+  box-shadow: 0px 0px 12px #808080;
+}
+.url{
+  padding:15px;
+  background-color:#000d1a;
+  box-shadow: 0px 0px 12px #808080;
+}
+.link{
+  color:whitesmoke;
+  text-align: center;
+  font-size:20px;
+  font-family:Gill Sans;
+  position: relative;
+  bottom: 0;
+  transition: bottom ease 0.5s;
+}
+.url :hover{
+  color: whitesmoke;
+  text-decoration: none;
+  bottom: -3px;
+
+}
+.button{
+  text-align:center;
+  margin-top:20px;
+
+}
+.btn{
+  font-weight:bold;
+}
+#achieve{
+  padding:130px;
+  font-family:Gill Sans;
+  background-color: white #ffffe6;
+
+}
+.achieve_heading
+{
+  text-align : center;
+  font-size: 60px;
+  font-weight:bold;
+  margin-bottom:30px;
+  padding-top:0px;
+}
+.image_achieve_div
+{
+  padding-top:40px;
+  text-align:center;
+}
+.image_achieve
+{
+  box-shadow: 0px 0px 12px #8c8c8c;
+}
+.content_achieve
+{
+  padding:30px;
+}
+.subheading_achieve
+{
+  font-size:30px;
+  padding-bottom:5px;
+  font-weight:bold;
+  font-family:serif;
+}
+.subcontent_achieve
+{
+  padding-bottom:30px;
+  font-size: 22px;
+  font-family:Times New Roman;
+}
+#contact{
+  background-color:#000d1a;
+  padding-top:80px;
+  padding-left:180px;
+  padding-right:180px;
+  padding-bottom:110px;
+  font-family:Gill Sans;
+
+}
+.intro2{
+  font-size:80px;
+  text-align:center;
+  color:WhiteSmoke;
+  font-family:Gill Sans;
+  animation : intro 4s 1;
+}
+.contact{
+
+  font-size:20px;
+  font-family:serif;
+  font-weight:bold;
+  color:WhiteSmoke;
+}
+.myself2{
+  text-align:center;
+  color:WhiteSmoke;
+  font-size:25px;
+    padding-bottom:60px;
+    font-family:Gill Sans;
+}
+.navbar-link1{
+  margin-top:70px;
+  padding:20px;
+  font-size:25px;
+  position: relative;
+    bottom: 0;
+    transition: bottom ease 0.5s;
+    color:WhiteSmoke;
+    font-family:Gill Sans;
+
+
+}
+.navbar-link1:hover{
+
+bottom: -10px;
+color:whitesmoke;
+text-decoration:none;
+font-family:Gill Sans;
+}
+.intro3{
+  padding:10px;
+  font-family:Gill Sans;
+}
+
+.footer{
+  background-color:#000d1a;
+  padding:5px;
+  color:WhiteSmoke;
+  text-align:center;
+  font-family:Gill Sans;
+}
+@media (max-width:1000px)
+{
+  .navbar{
+    background-color:#00001a;
+    padding-right:0px;
+    padding-left:10px;
+    padding-top: 0px;
+    padding-bottom:0px;
+    display:block;
+    z-index: 1;
+    }
+
+  .navbar-brand-tin{
+    font-size : 86px;
+     color : white;
+     text-decoration : none;
+     font-family:Times New Roman;
+  }
+  .nav-item
+  {
+    padding-bottom:0px;
+    margin:0px;
+    color:WhiteSmoke;
+    font-weight:bold;
+    font-size:40px;
+    font-family:Times New Roman;
+    transition: left ease 1s;
+  }
+  #home{
+    background-color: #00001a;
+    color:WhiteSmoke;
+    padding:200px;
+    font-weight:bold;
+    text-align:center;
+    font-family:Gill Sans;
+  }
+
+  .myself{
+    color:lightgreen;
+    font-family:Times New Roman;
+    font-size : 60px;
+  }
+  .intro{
+    font-size:75px;
+    color:whitesmoke;
+    font-family:Times New Roman;
+    animation-delay: 7s;
+
+  }
+
+  #about{
+    padding-top:130px;
+    padding-bottom:160px;
+    font-family:Gill Sans;
+    background-color:white #ffffe6;
+  }
+  .about_heading
+  {
+    text-align : center;
+    font-size: 80px;
+    font-weight:bold;
+    margin-bottom:30px;
+    padding-top:0px;
+  }
+  .image_about_div
+  {
+    padding-top:60px;
+    padding-right:70px;
+    text-align:center;
+  }
+  .image_about_1{
+    border-radius:0%;
+    width:45%;
+    margin-left:100px;
+    box-shadow: 0px 0px 12px #8c8c8c;
+
+  }
+  .image_about_2{
+    border-radius:0%;
+    width:45%;
+    margin-left:50px;
+    box-shadow: 0px 0px 12px #8c8c8c;
+
+  }
+  .content_about
+  {
+    padding-top:30px;
+    padding-left:40px;
+    margin-left:150px;
+    margin-right:50px;
+    margin-top:30px;
+
+  }
+  .subheading_about
+  {
+    font-size:45px;
+    padding-bottom:5px;
+    padding-right:10px;
+    font-weight:bold;
+    font-family:serif;
+    margin-left:20px;
+    text-align:left;
+  }
+  .subcontent_about
+  {
+    padding-bottom:30px;
+    font-size: 40px;
+    font-family:Times New Roman;
+    margin-left:20px;
+    text-align:left;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+      filter: invert(100%);
+      margin-top:225px;
+  }
+
+  #skills{
+    padding:80px;
+    background-color:white;
+  }
+  .skills_heading
+  {
+    text-align : center;
+    font-size: 60px;
+    font-weight:bold;
+    margin-bottom:40px;
+    text-decoration:underline;
+    padding-top:0px;
+    font-family: Times New Roman;
+  }
+      .diamond {
+        height: 115px;
+        width: 115px;
+        transform: rotateX(45deg) rotateZ(45deg);
+        box-shadow: 0px 0px 12px black;
+        background-color: #00cccc;
+        padding-left:0px;
+        margin-left:80px;
+        margin-top:40px;
+        color:white;
+  }
+  .skills_icon
+  {
+     transform: rotateX(0deg) rotateZ(-45deg);
+     padding-left:75px;
+     padding-right:0px;
+     padding-top:0px;
+    padding-bottom:185px;
+  }
+  .skills_subheading
+  {
+    padding-top:10px;
+    padding-left:45px;
+    font-weight:bold;
+    font-family:sans;
+    color:#4d4d4d;
+    text-align:left;
+    margin-left:60px;
+  }
+  .skills_content
+  {
+     padding-top:30px;
+     padding-left:70px;
+     padding-bottom:55px;
+     margin:20px 20px 10px 40px;
+
+  }
+  .skills_subcontent_1
+  {
+    font-size:15px;
+    font-family:times;
+    text-align:center;
+
+  }
+  .skills_subcontent_2
+  {
+    font-size:20px;
+    font-family:times;
+  }
+  .image_skills_div
+  {
+    padding-top:150px;
+    padding-right:100px;
+    text-align:center;
+  }
+  .image_skills{
+    border-radius:0%;
+    width:100%;
+    box-shadow: 0px 0px 12px #808080;
+  }
+  #work{
+    background-color:#e6e6e6;
+    padding:150px;
+    box-shadow: 0px 0px 12px #808080;
+  }
+  .intro1{
+    padding-top:-20px;
+    font-size:50px;
+    color:black;
+    text-align:center;
+    font-family:Times New Roman;
+  }
+
+  .image{
+    width:100%;
+    height:100%;
+  }
+
+  .image-div{
+    width:100%;
+    height:70%;
+    box-shadow: 0px 0px 12px #808080;
+  }
+  .url{
+    padding:15px;
+    background-color:#000d1a;
+    box-shadow: 0px 0px 12px #808080;
+  }
+  .link{
+    color:whitesmoke;
+    text-align: center;
+    font-size:20px;
+    font-family:Gill Sans;
+    position: relative;
+    bottom: 0;
+    transition: bottom ease 0.5s;
+  }
+  .url :hover{
+    color: whitesmoke;
+    text-decoration: none;
+    bottom: -3px;
+
+  }
+  .button{
+    text-align:center;
+    margin-top:20px;
+  }
+  .btn{
+    font-weight:bold;
+
+    font-size:20px;
+  }
+  #achieve{
+    padding:130px;
+    font-family:Gill Sans;
+    background-color: white #ffffe6;
+
+  }
+  .achieve_heading
+  {
+    text-align : center;
+    font-size: 60px;
+    font-weight:bold;
+    margin-bottom:30px;
+    padding-top:0px;
+    font-family:Times New Roman;
+  }
+  .image_achieve_div
+  {
+    padding-top:60px;
+
+  }
+  .image_achieve
+  {
+    box-shadow: 0px 0px 12px #8c8c8c;
+    margin-right:40px;
+    text-align:left;
+    margin-bottom: 30px;
+  }
+  .content_achieve
+  {
+    padding:30px;
+  }
+  .subheading_achieve
+  {
+    font-size:30px;
+    padding-bottom:5px;
+    font-weight:bold;
+    font-family:serif;
+    margin-left:80px;
+  }
+  .subcontent_achieve
+  {
+    padding-bottom:30px;
+    font-size: 22px;
+    font-family:Times New Roman;
+    margin-left:80px;
+  }
+  #contact{
+    background-color:#000d1a;
+    padding-top:80px;
+    padding-left:180px;
+    padding-right:180px;
+    padding-bottom:110px;
+    font-family:Gill Sans;
+
+  }
+  .intro2{
+    font-size:80px;
+    text-align:center;
+    color:WhiteSmoke;
+    font-family:Times New Roman;
+    animation : intro 4s 1;
+  }
+  .contact{
+
+    font-size:20px;
+    font-family:serif;
+    font-weight:bold;
+    color:WhiteSmoke;
+  }
+  .myself2{
+    text-align:center;
+    color:WhiteSmoke;
+    font-size:25px;
+      padding-bottom:60px;
+      font-family:Times New Roman;
+  }
+  .navbar-link1{
+    margin-top:70px;
+    padding:20px;
+    font-size:25px;
+    position: relative;
+      bottom: 0;
+      transition: bottom ease 0.5s;
+      color:WhiteSmoke;
+      font-family:Gill Sans;
+
+
+  }
+  .navbar-link1:hover{
+
+  bottom: -10px;
+  color:whitesmoke;
+  text-decoration:none;
+  font-family:Gill Sans;
+  }
+  .intro3{
+    padding:10px;
+    font-family:Gill Sans;
+  }
+  .icon
+  {
+    color:whitesmoke;
+    font-family:Gill Sans;
+  }
+  .footer{
+    background-color:#000d1a;
+    padding:5px;
+    color:WhiteSmoke;
+    text-align:center;
+    font-family:Gill Sans;
+  }
+}
